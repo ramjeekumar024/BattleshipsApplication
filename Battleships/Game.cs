@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Battleships
+﻿namespace Battleships
 {
     // Imagine a game of battleships.
     //   The player has to guess the location of the opponent's 'ships' on a 10x10 grid

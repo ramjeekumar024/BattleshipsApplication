@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{A21AB229-AD16-4500-8AB1-55CB6BE66322}</ProjectGuid>
-    <OutputType>Exe</OutputType>
+    <ProjectGuid>{BEE73501-8FC0-43E2-A00F-21C8C570E5DA}</ProjectGuid>
+    <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Battleships</RootNamespace>
-    <AssemblyName>Battleships</AssemblyName>
+    <RootNamespace>Battleships.Model</RootNamespace>
+    <AssemblyName>Battleships.Model</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -30,9 +30,6 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
-  <PropertyGroup>
-    <StartupObject />
-  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -44,20 +41,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsoleInterface.cs" />
-    <Compile Include="Game.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="Battleship.cs" />
+    <Compile Include="Board.cs" />
+    <Compile Include="Destructor.cs" />
+    <Compile Include="Position.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Battleships.Business\Battleships.Business.csproj">
-      <Project>{8f920f6f-0910-4168-b22b-344949850400}</Project>
-      <Name>Battleships.Business</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\Battleships.Model\Battleships.Model.csproj">
-      <Project>{bee73501-8fc0-43e2-a00f-21c8c570e5da}</Project>
-      <Name>Battleships.Model</Name>
-    </ProjectReference>
+    <Compile Include="Ship.cs" />
+    <Compile Include="ShipFactory.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
